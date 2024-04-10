@@ -1,0 +1,92 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="_IDGenDialog1"
+        title="List of Supplier"
+        
+    >
+        <content>
+            <Table
+                id="dialogtable"
+                items="{alModel>/}"
+                mode="MultiSelect"
+            >
+                <columns>
+                    <Column id="_ID_1">
+                        <Text
+                            id="ID_2"
+                            text="Supplier ID"
+                        />
+                    </Column>
+                    <Column id="_ID_3">
+                        <Text
+                            id="_ID_4"
+                            text="Supplier Name"
+                        />
+                    </Column>
+                    <Column id="_ID_5">
+                        <Text
+                            id="_ID_6"
+                            text="Supplier Address"
+                        />
+                    </Column>
+                    <Column id="_ID_7">
+                        <Text
+                            id="_ID_8"
+                            text="Supplier deals in Commodity"
+                        />
+                    </Column>
+                    <Column id="id_9">
+                        <Text
+                            id="_ID_10"
+                            text="Supplier Contact"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="_ID_11">
+                        <cells>
+                            <Text
+                                id="_ID12"
+                                text="{alModel>supplierid}"
+                            />
+                            <Text
+                                id="_ID13"
+                                text="{alModel>suppliername}"
+                            />
+                            <Text
+                                id="_ID14"
+                                text="{alModel>supplieraddress}"
+                            />
+                            <Text
+                                id="_ID15"
+                                text="{alModel>supplierdeals}"
+                            />
+                            <Text
+                                id="_ID18"
+                                text="{alModel>suppliercontact}"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <Toolbar id="_IDGet2">
+            <ToolbarSpacer id="_IDGt1" />
+            <Button
+                id="_IDGenB1"
+                text="Add"
+                type="Emphasized"
+                press="onList"
+            />
+            <Button
+                id="_IDGenB2"
+                text="Cancel"
+                press="onCancelList"
+            />
+        </Toolbar>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,74 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Dialog
+        id="_IDGenDialog2"
+        title="List of Contract"
+        
+    >
+        <content>
+            <Table
+                id="dialogtable1"
+                items="{lclModel>/}"
+                mode="MultiSelect"
+            >
+                <columns>
+                    <Column id="colid">
+                        <Text
+                            id="idd_01"
+                            text="Contract ID"
+                        />
+                    </Column>
+                    <Column id="id02">
+                        <Text
+                            id="id3"
+                            text="Contract Title"
+                        />
+                    </Column>
+                    <Column id="id4">
+                        <Text
+                            id="id5"
+                            text="Contract Expire date"
+                        />
+                    </Column>
+                    
+                </columns>
+                <items>
+                    <ColumnListItem id="id6">
+                        <cells>
+                            <Text
+                                id="id7"
+                                text="{lclModel>contractid}"
+                            />
+                            <Text
+                                id="id8"
+                                text="{lclModel>contracttitle}"
+                            />
+                            <Text
+                                id="id9"
+                                text="{lclModel>contractexpiredate}"
+                            />
+                            
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+        <Toolbar id="_IDGet3">
+            <ToolbarSpacer id="_IDGt4" />
+            <Button
+                id="IDGB3"
+                text="Add"
+                type="Emphasized"
+                press="onAddContract"
+            />
+            <Button
+                id="IDG4"
+                text="Cancel"
+                press="onCancel"
+            />
+        </Toolbar>
+    </Dialog>
+</core:FragmentDefinition>

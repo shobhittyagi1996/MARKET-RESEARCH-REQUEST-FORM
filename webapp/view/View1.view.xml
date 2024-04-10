@@ -172,20 +172,22 @@
                                     <Table
                                         id="Table1"
                                         items="{myModel>/}"
+                                        mode="MultiSelect"
                                     >
                                         <headerToolbar>
                                             <OverflowToolbar id="_IDGenTool1">
+                                            <ToolbarSpacer id="_IDGenToolbarSpacer1" ></ToolbarSpacer>
                                                 <Button
                                                     id="_IDGenBun1"
                                                     icon="sap-icon://add"
                                                     type="Emphasized"
-                                                    press="onCreate"
+                                                    press="onAddList"
                                                 />
                                                 <Button
                                                     id="_IDGenButton3"
                                                     icon="sap-icon://delete"
                                                     type="Emphasized"
-                                                    press="onCreate"
+                                                    press="onDelete"
                                                 />
                                             </OverflowToolbar>
                                         </headerToolbar>
@@ -258,21 +260,23 @@
                                 <uxap:blocks>
                                     <Table
                                         id="Table2"
-                                        items="{Model>/}"
+                                        items="{oTableModel>/}"
+                                        mode="MultiSelect"
                                     >
                                         <headerToolbar>
                                             <OverflowToolbar id="_IDGenT2">
+                                            <ToolbarSpacer id="_IDGenToolbarSpacer2" ></ToolbarSpacer>
                                                 <Button
                                                     id="_IDGenB4"
                                                     icon="sap-icon://add"
                                                     type="Emphasized"
-                                                    press="onCreate"
+                                                    press="onContract"
                                                 />
                                                 <Button
                                                     id="_IDGen5"
                                                     icon="sap-icon://delete"
                                                     type="Emphasized"
-                                                    press="onCreate"
+                                                    press="onDel"
                                                 />
                                             </OverflowToolbar>
                                         </headerToolbar>
@@ -303,15 +307,15 @@
                                                 <cells>
                                                     <Text
                                                         id="_IDT06"
-                                                        text="{Model>contractid}"
+                                                        text="{oTableModel>contractid}"
                                                     />
                                                     <Text
                                                         id="_IDTt07"
-                                                        text="{Model>contracttitle}"
+                                                        text="{oTableModel>contracttitle}"
                                                     />
                                                     <Text
                                                         id="_IDTt08"
-                                                        text="{Model>contractexpiredate}"
+                                                        text="{oTableModel>contractexpiredate}"
                                                     />
                                                 </cells>
                                             </ColumnListItem>
@@ -422,9 +426,9 @@
         <footer>
             <Bar id="bar">
                 <contentRight>
-                    <Button text="Save as draft" type="Emphasized" />
-                    <Button text="Submit for approval" type="Emphasized" />
-                    <Button text="Cancel" type="Emphasized" />
+                    <Button id="_IDGenButton4" text="Save as draft" type="Emphasized" />
+                    <Button id="_IDGenButton5" text="Submit for approval" type="Emphasized" />
+                    <Button id="_IDGenButton6" text="Cancel" type="Emphasized" />
                 </contentRight>
             </Bar>
         </footer>
