@@ -55,53 +55,53 @@ sap.ui.define([
                 let data = [
                     {
                         "supplierid": "	SUP1001",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Alade Ifeanyichukwu Akerele",
+                        "supplieraddress": "34 Leonard Street",
+                        "supplierdeals": "Electrical and Electronics Drafter",
+                        "suppliercontact": "+0941 1207559",
                     },
                     {
                         "supplierid": "	SUP1002",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Luciana Esposito",
+                        "supplieraddress": "Piazza Tolomeo 476 Appartamento 82",
+                        "supplierdeals": "eos",
+                        "suppliercontact": "+39 339 944 309",
 
                     },
                     {
                         "supplierid": "	SUP1003",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Lesly Wehner",
+                        "supplieraddress": "849 Schoen Mill",
+                        "supplierdeals": "Educational Counselor",
+                        "suppliercontact": "+1 (410) 259-9051",
 
                     },
                     {
                         "supplierid": "	SUP1004",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
+                        "suppliername": "David Ward",
+                        "supplieraddress": "14 ممر أمين جواهرجي",
                         "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliercontact": "+(248) 930-3993",
                     },
                     {
                         "supplierid": "	SUP1005",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
+                        "suppliername": "Sr. Thiago Reséndez",
+                        "supplieraddress": "Urb. Daniela Arreola # 92436 Hab. 424",
                         "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliercontact": "+51 914547843",
 
                     }, {
                         "supplierid": "	SUP1006",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Berenice Shields",
+                        "supplieraddress": "31849 Vivianne Via Apt. 629",
+                        "supplierdeals": "Armored Assault Vehicle Crew Member",
+                        "suppliercontact": "+1-312-391-2275",
 
                     },
                     {
                         "supplierid": "	SUP1007",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
+                        "suppliername": "Wilmer Bernhard",
+                        "supplieraddress": "Kaspar-Fricke-Platz 46b",
                         "supplierdeals": "Full legal name of the company",
                         "suppliercontact": "+44 7700 900077",
 
@@ -109,69 +109,69 @@ sap.ui.define([
                     },
                     {
                         "supplierid": "	SUP1008",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Mr. Willie Mogale",
+                        "supplieraddress": "Jónás part 20.",
+                        "supplierdeals": "Rotary Drill",
+                        "suppliercontact": "013 486 0835",
 
                     },
                     {
                         "supplierid": "	SUP1009",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "GNti. Hilppa Jurvanen",
+                        "supplieraddress": "Valjakkahaka 293",
+                        "supplierdeals": "aut",
+                        "suppliercontact": "+358 19 6493801",
 
                     },
                     {
                         "supplierid": "	SUP1010",
-                        "suppliername": "Global Enterprises Inc.",
-                        "supplieraddress": "Saudi Arabia",
-                        "supplierdeals": "Full legal name of the company",
-                        "suppliercontact": "+44 7700 900077",
+                        "suppliername": "Shemar Sanford",
+                        "supplieraddress": "890 Colten Heights",
+                        "supplierdeals": "Benefits Specialist",
+                        "suppliercontact": "+1-203-481-3220",
 
                     },
                 ];
                 let cdata = [
                     {
                         "contractid": "	CON1001",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Supply Agreement with ABC Inc.",
                         "contractexpiredate": "10-04-2024",
                     },
                     {
                         "contractid": "	CON1004",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Distribution Contract with XYZ Corp.",
                         "contractexpiredate": "04-06-2024",
 
                     },
                     {
                         "contractid": "	CON1003",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Service Agreement with LMN Enterprises",
                         "contractexpiredate": "09-06-2024",
 
 
                     },
                     {
                         "contractid": "	CON1006",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Purchase Agreement with PQR Ltd.",
                         "contractexpiredate": "12-06-2024",
 
                     },
                     {
                         "contractid": "	CON1002",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Consulting Agreement with EFG Consulting Services",
                         "contractexpiredate": "12-06-2024",
 
                     }, {
                         "contractid": "	CON1008",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Lease Contract for RST Warehouse.",
                         "contractexpiredate": "10-05-2024",
 
 
                     },
                     {
                         "contractid": "	CON1009",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Software License Agreement with XYZ Software Inc.",
                         "contractexpiredate": "12-06-2025",
 
 
@@ -179,21 +179,21 @@ sap.ui.define([
                     },
                     {
                         "contractid": "	CON1001",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Maintenance Contract for ABC Machinery",
                         "contractexpiredate": "12-09-2024",
 
 
                     },
                     {
                         "contractid": "	CON1005",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Lease Agreement for PQR Office Space",
                         "contractexpiredate": "11-07-2024",
 
 
                     },
                     {
                         "contractid": "	CON1010",
-                        "contracttitle": "Global Enterprises Inc.",
+                        "contracttitle": "Advertising Contract with LMN Marketing Agency",
                         "contractexpiredate": "20-10-2024",
 
 
@@ -277,6 +277,7 @@ sap.ui.define([
                     var oTableModel = new sap.ui.model.json.JSONModel();
                     oTableModel.setData(aSelectedData);
                     oTable.setModel(oTableModel, "oTableModel");
+                    this._ContractDialog.close();
             
                 } else {
                     console.warn("No item selected.");
@@ -311,9 +312,10 @@ sap.ui.define([
                     oTable.setModel(oTableModel, "myModel");
 
                     var oDialog = this.byId("_IDGenDialog2");
-                if (oDialog) {
-                    oDialog.close();
-                }
+               
+                    this._ListDialog.close();
+                    oDialog.refresh(); 
+                
             
                 } else {
                     console.warn("No item selected.");
