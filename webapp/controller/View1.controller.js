@@ -11,7 +11,7 @@ sap.ui.define([
 
         return Controller.extend("com.sap.marketresearch.controller.View1", {
             onInit: function () {
-                
+
 
                 let Dropdown = [
                     {
@@ -249,19 +249,19 @@ sap.ui.define([
             onCancel: function () {
                 this._ContractDialog.close();
             },
-            
+
             onAddContract: function () {
                 debugger
                 var oDialogTable = this.byId("dialogtable1");
                 var aSelectedItems = oDialogTable.getSelectedItems();
-            
+
                 // Check if any item is selected
                 if (aSelectedItems.length > 0) {
                     // Array to store selected data objects
                     var aSelectedData = [];
-            
+
                     // Iterate over each selected item
-                    aSelectedItems.forEach(function(oSelectedItem) {
+                    aSelectedItems.forEach(function (oSelectedItem) {
                         // Access the binding context of the selected item
                         var oBindingContext = oSelectedItem.getBindingContext("lclModel");
                         // Get the data object from the binding context
@@ -269,32 +269,31 @@ sap.ui.define([
                         // Push the selected data object to the array
                         aSelectedData.push(oSelectedData);
                     });
-            
+
                     // Get the table control
                     var oTable = this.byId("Table2");
-            
+
                     // Create a JSON model and set it to the table
                     var oTableModel = new sap.ui.model.json.JSONModel();
                     oTableModel.setData(aSelectedData);
                     oTable.setModel(oTableModel, "oTableModel");
                     this._ContractDialog.close();
-            
-                } else {
-                    console.warn("No item selected.");
+
+
                 }
             },
             onList: function () {
                 debugger
                 var oDialogTable = this.byId("dialogtable");
                 var aSelectedItems = oDialogTable.getSelectedItems();
-            
+
                 // Check if any item is selected
                 if (aSelectedItems.length > 0) {
                     // Array to store selected data objects
                     var aSelectedData = [];
-            
+
                     // Iterate over each selected item
-                    aSelectedItems.forEach(function(oSelectedItem) {
+                    aSelectedItems.forEach(function (oSelectedItem) {
                         // Access the binding context of the selected item
                         var oBindingContext = oSelectedItem.getBindingContext("alModel");
                         // Get the data object from the binding context
@@ -302,28 +301,88 @@ sap.ui.define([
                         // Push the selected data object to the array
                         aSelectedData.push(oSelectedData);
                     });
-            
+
                     // Get the table control
                     var oTable = this.byId("Table1");
-            
+
                     // Create a JSON model and set it to the table
                     var oTableModel = new sap.ui.model.json.JSONModel();
                     oTableModel.setData(aSelectedData);
                     oTable.setModel(oTableModel, "myModel");
 
                     var oDialog = this.byId("_IDGenDialog2");
-               
+
                     this._ListDialog.close();
-                    oDialog.refresh(); 
-                
-            
-                } else {
-                    console.warn("No item selected.");
+
+
+
                 }
+
             },
-            
-            
-            
+            onDelete: function () {
+                var oTable = this.byId("Table1");
+                var aSelectedItems = oTable.getSelectedContexts();
+
+                // Check if any item is selected
+                if (aSelectedItems.length > 0) {
+                    // If only one item is selected, delete it directly
+                    if (aSelectedItems.length === 1) {
+                        var oSelectedItem = aSelectedItems[0];
+                        var oModel = oTable.getModel("myModel");
+                        var aData = oModel.getData();
+                        var iIndex = aData.indexOf(oSelectedItem.getObject());
+                        aData.splice(iIndex, 1); // Remove the selected item
+                        oModel.setData(aData); // Update the model
+                    } else {
+                        // If multiple items are selected, delete them one by one starting from the last index
+                        for (var i = aSelectedItems.length - 1; i >= 0; i--) {
+                            var oSelectedItem = aSelectedItems[i];
+                            var oModel = oTable.getModel("myModel");
+                            var aData = oModel.getData();
+                            var iIndex = aData.indexOf(oSelectedItem.getObject());
+                            aData.splice(iIndex, 1); // Remove the selected item
+                            oModel.setData(aData); // Update the model
+                        }
+                    }
+
+                    // Clear the selection after deletion
+                    oTable.removeSelections();
+
+                }
+                
+            },
+            onDel: function () {
+                var oTable = this.byId("Table2");
+                var aSelectedItems = oTable.getSelectedContexts();
+
+                // Check if any item is selected
+                if (aSelectedItems.length > 0) {
+                    // If only one item is selected, delete it directly
+                    if (aSelectedItems.length === 1) {
+                        var oSelectedItem = aSelectedItems[0];
+                        var oModel = oTable.getModel("oTableModel");
+                        var aData = oModel.getData();
+                        var iIndex = aData.indexOf(oSelectedItem.getObject());
+                        aData.splice(iIndex, 1); // Remove the selected item
+                        oModel.setData(aData); // Update the model
+                    } else {
+                        // If multiple items are selected, delete them one by one starting from the last index
+                        for (var i = aSelectedItems.length - 1; i >= 0; i--) {
+                            var oSelectedItem = aSelectedItems[i];
+                            var oModel = oTable.getModel("oTableModel");
+                            var aData = oModel.getData();
+                            var iIndex = aData.indexOf(oSelectedItem.getObject());
+                            aData.splice(iIndex, 1); // Remove the selected item
+                            oModel.setData(aData); // Update the model
+                        }
+                    }
+
+                    // Clear the selection after deletion
+                    oTable.removeSelections();
+
+                }
+                
+            },
 
         });
     });
